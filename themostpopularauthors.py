@@ -14,7 +14,7 @@ def mostPopularAuthors():
     lista = lista.replace("-", "").replace("(", "") \
                  .replace(")", "").replace(",", "") \
                  .replace("'", " ").replace("Decimal", "-")
-    print(lista + "views")
+    print("Most popular authors:" + "\n" + lista + "views")
 
 mostPopularAuthors()
 

@@ -14,13 +14,12 @@ def daysDidMoreThan1Precent():
     s = (" % errors" + "\n")
     lista = (s.join(map(str, result)))
     lista = lista.replace("(", "") \
-      .replace(")", "").replace("'", "").replace('datetime.date', "") \
+        .replace(")", "").replace("'", "").replace('datetime.date', "") \
         .replace('Decimal', "-").replace('     ', "")
-    print('On which days did more than 1% of requests lead to errors?'+"\n" +
-      lista+" % errors")
+    print('Days with more than 1% of request errors?'+"\n" + lista+" % errors")
+
 
 daysDidMoreThan1Precent()
-
 
     
 

@@ -2,7 +2,7 @@ import psycopg2
 
 DBNAME = "news"
 
-# What are the most popular three articles of all time? #
+# What are three most popular articles of all time? #
 
 
 def get_alltime():
@@ -15,7 +15,8 @@ def get_alltime():
     lista = (s.join(map(str, posts)))
     lista = lista.replace("L", "").replace("-", " ").replace("(", "") \
         .replace(")", "").replace(",", "").replace("'", "-")
-    print lista.title() + " views"
+    description = "Three most popular articles of all time:"
+    print description + "\n" + lista.title() + " views"
 
 
 get_alltime()

@@ -11,9 +11,9 @@ def get_alltime():
     c.execute("select * from threeMostViewArticles")
     posts = c.fetchall()
     db.close()
-    s = (" -views" + "\n")
+    s = (" -Views" + "\n")
     lista = (s.join(map(str, posts)))
     lista = lista.replace("L", "").replace("-", " ").replace("(", "") \
         .replace(")", "").replace(",", "").replace("'", "-")
     description = "Three most popular articles of all time:"
-    print description + "\n" + lista.title() + " views"
+    print description + "\n" + lista.title() + " Views"

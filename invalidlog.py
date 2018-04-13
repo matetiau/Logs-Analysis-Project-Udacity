@@ -16,10 +16,4 @@ def daysDidMoreThan1Precent():
     lista = lista.replace("(", "") \
         .replace(")", "").replace("'", "").replace('datetime.date', "") \
         .replace('Decimal', "-").replace('     ', "")
-    print('Days with more than 1% of request errors?'+"\n" + lista+" % errors")
-
-
-daysDidMoreThan1Precent()
-
-    
-
+    print('Days with more than 1% of request errors:'+"\n" + lista+" % errors")

@@ -15,6 +15,3 @@ def mostPopularAuthors():
                  .replace(")", "").replace(",", "") \
                  .replace("'", " ").replace("Decimal", "-")
     print("Most popular authors:" + "\n" + lista + "views")
-
-mostPopularAuthors()
-

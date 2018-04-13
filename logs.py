@@ -17,14 +17,3 @@ def get_alltime():
         .replace(")", "").replace(",", "").replace("'", "-")
     description = "Three most popular articles of all time:"
     print description + "\n" + lista.title() + " views"
-
-
-get_alltime()
-
-
-
-
-
-
-
-

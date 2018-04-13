@@ -9,9 +9,9 @@ def mostPopularAuthors():
     c.execute("select * from theMostpopularAuthorsSumUp;")
     result = c.fetchall()
     db.close()
-    s = ("views" + "\n")
+    s = ("Views" + "\n")
     lista = (s.join(map(str, result)))
     lista = lista.replace("-", "").replace("(", "") \
                  .replace(")", "").replace(",", "") \
                  .replace("'", " ").replace("Decimal", "-")
-    print("Most popular authors:" + "\n" + lista + "views")
+    print("Most popular authors:" + "\n" + lista + "Views")

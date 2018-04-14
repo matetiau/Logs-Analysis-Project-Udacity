@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 from invalidlog import daysDidMoreThan1Precent
 from logs import get_alltime
 from themostpopularauthors import mostPopularAuthors
@@ -8,4 +9,7 @@ def allAnswersForQuestions():
     second_quest = mostPopularAuthors()
     third_quest = daysDidMoreThan1Precent()
     return first_quest, second_quest, third_quest
-allAnswersForQuestions()
+
+
+if __name__ == '__main__':
+    allAnswersForQuestions()

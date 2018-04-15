@@ -4,14 +4,12 @@ DBNAME = "news"
 
 
 def mostPopularAuthors():
+    """Who are three most popular authors of all time?"""
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     c.execute("select * from theMostpopularAuthorsSumUp;")
-    result = c.fetchall()
+    posts = c.fetchall()
     db.close()
-    s = ("Views" + "\n")
-    lista = (s.join(map(str, result)))
-    lista = lista.replace("-", "").replace("(", "") \
-                 .replace(")", "").replace(",", "") \
-                 .replace("'", " ").replace("Decimal", "-")
-    print("Most popular authors:" + "\n" + lista + "Views")
+    print('Three most popular authors of all time:')
+    for post in posts:
+        print('- "{}" - {} views'.format(post[0], post[1]))

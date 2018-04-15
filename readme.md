@@ -1,4 +1,8 @@
-Hello. This is program written in python 2.7 and it can extract data from database of newspaper. For running this program you need Linux VM with Vagrant and python 2.7 installed on your machine, vagrant file and newspaper database. Links for those programs and files:
+# Logs Analysis
+## Project Description:
+
+
+###Hello. This is program written in python 2.7 and it can extract data from database of newspaper. For running this program you need Linux VM with Vagrant and python 2.7 installed on your machine, vagrant file and newspaper database. Links for those programs and files:
 
 https://www.virtualbox.org/wiki/Downloads
 https://www.vagrantup.com/downloads.html

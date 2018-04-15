@@ -13,8 +13,8 @@
 #### After downloading this file put it in directory /vagrant from step before.For building VM after turn off just write vagrant up and log into with vagrant ssh. If you are logged in you can build up database with command "psql -d news -f newsdata.sql" in addition you have to run this command for building views "psql -d news -f views.sql".After that access this databse with psql news command when loged into vagrant. 
 
 #### All steps above are necessary for running this app. You can run Logs_Analysis_Tool.py for getting answers for three questions:
-1. What are the most popular three articles of all time? 
-2. Who are the most popular article authors of all time?
-3. On which days did more than 1% of requests lead to errors?
+##### 1. What are the most popular three articles of all time? 
+##### 2. Who are the most popular article authors of all time?
+##### 3. On which days did more than 1% of requests lead to errors?
 
 
